@@ -3,15 +3,15 @@
 ```go
 type Duck struct {}
 
-func (d Duck) Quack() {
+func (d *Duck) Quack() {
     fmt.Println("Quack!")
 }
 
-func (d Duck) Swim() {
+func (d *Duck) Swim() {
     fmt.Println("Swim!")
 }
 
-func (d Duck) Display() {
+func (d *Duck) Display() {
     fmt.Println("Duck!")
 }
 
@@ -19,7 +19,7 @@ type MallardDuck struct {
     Duck
 }
 
-func (m MallardDuck) Display() {
+func (m *MallardDuck) Display() {
     fmt.Println("MallardDuck!")
 }
 
@@ -27,7 +27,7 @@ type RedheadDuck struct {
     Duck
 }
 
-func (r RedheadDuck) Display() {
+func (r *RedheadDuck) Display() {
     fmt.Println("RedheadDuck!")
 }
 ```
@@ -37,11 +37,11 @@ func (r RedheadDuck) Display() {
 ```go
 type Duck struct {}
 
-func (d Duck) Swim() {
+func (d *Duck) Swim() {
     fmt.Println("Swim!")
 }
 
-func (d Duck) Display() {
+func (d *Duck) Display() {
     fmt.Println("Duck!")
 }
 
@@ -57,15 +57,15 @@ type MallardDuck struct {
     Duck
 }
 
-func (m MallardDuck) Display() {
+func (m *MallardDuck) Display() {
     fmt.Println("MallardDuck!")
 }
 
-func (m MallardDuck) Fly() {
+func (m *MallardDuck) Fly() {
     fmt.Println("Fly!")
 }
 
-func (m MallardDuck) Quack() {
+func (m *MallardDuck) Quack() {
     fmt.Println("Quack!")
 }
 
@@ -73,7 +73,7 @@ type RedheadDuck struct {
     Duck
 }
 
-func (r RedheadDuck) Display() {
+func (r *RedheadDuck) Display() {
     fmt.Println("RedheadDuck!")
 }
 
@@ -89,11 +89,11 @@ type RubberDuck struct {
     Duck
 }
 
-func (r RubberDuck) Display() {
+func (r *RubberDuck) Display() {
     fmt.Println("RubberDuck!")
 }
 
-func (r RubberDuck) Quack() {
+func (r *RubberDuck) Quack() {
     fmt.Println("Quack!")
 }
 
@@ -101,7 +101,7 @@ type DecoyDuck struct {
     Duck
 }
 
-func (r DecoyDuck) Display() {
+func (r *DecoyDuck) Display() {
     fmt.Println("DecoyDuck!")
 }
 ```
@@ -125,13 +125,13 @@ type FlyBehavior interface {
 
 type FlyWithWings struct {}
 
-func (f FlyWithWings) Fly() {
+func (f *FlyWithWings) Fly() {
     fmt.Println("Fly with wings!")
 }
 
 type FlyNoWay struct {}
 
-func (f FlyNoWay) Fly() {}
+func (f *FlyNoWay) Fly() {}
 
 type QuackBehavior interface{
     Quack()
@@ -139,34 +139,34 @@ type QuackBehavior interface{
 
 type Quack struct {}
 
-func (q Quack) Quack() {
+func (q *Quack) Quack() {
     fmt.Println("Quack!")
 }
 
 type Squeak struct {}
 
-func (s Squeak) Quack() {
+func (s *Squeak) Quack() {
     fmt.Println("Squeak!")
 }
 
 type MuteQuack struct {}
 
-func (m MuteQuack) Quack() {}
+func (m *MuteQuack) Quack() {}
 
 type Duck struct {
     FlyBehavior FlyBehavior
     QuackBehavior QuackBehavior
 }
 
-func (d Duck) Swim() {
+func (d *Duck) Swim() {
     fmt.Println("Swim!")
 }
 
-func (d Duck) Display() {
+func (d *Duck) Display() {
     fmt.Println("Duck!")
 }
 
-func (d Duck) PerformQuack() {
+func (d *Duck) PerformQuack() {
     d.QuackBehavior.Quack()
 }
 
@@ -174,7 +174,7 @@ func (d *Duck) SetQuackBehavior(quackBehavior QuackBehavior) {
     d.QuackBehavior = quackBehavior
 }
 
-func (d Duck) PerformFly() {
+func (d *Duck) PerformFly() {
     d.FlyBehavior.Fly()
 }
 
@@ -195,7 +195,7 @@ func NewMallardDuck() MallardDuck {
     }
 }
 
-func (m MallardDuck) Display() {
+func (m *MallardDuck) Display() {
     fmt.Println("MallardDuck!")
 }
 ```
