@@ -11,7 +11,7 @@
 The simple factory in terms of the pizza example:
 
 <p align="center">
-    <img width="700" src="resources/simple_factory_pizza.png">
+    <img width="720" src="resources/simple_factory_pizza.png">
 </p>
 
 ## Factory Method
@@ -25,13 +25,13 @@ The simple factory in terms of the pizza example:
 The factory method in terms of the pizza example:
 
 <p align="center">
-    <img width="700" src="resources/factory_method_pizza.png">
+    <img width="720" src="resources/factory_method_pizza.png">
 </p>
 
 The factory method in general:
 
 <p align="center">
-    <img width="700" src="resources/factory_method.png">
+    <img width="720" src="resources/factory_method.png">
 </p>
 
 ### The Dependency Iversion Principle
@@ -57,11 +57,11 @@ any of its base classes.
 The Abstract factory in terms of the pizza example:
 
 <p align="center">
-    <img width="700" src="resources/abstract_factory_pizza.png">
+    <img width="720" src="resources/abstract_factory_pizza.png">
 </p>
 
 The abstract factory in general:
 
 <p align="center">
-    <img width="700" src="resources/abstract_factory.png">
+    <img width="720" src="resources/abstract_factory.png">
 </p>
