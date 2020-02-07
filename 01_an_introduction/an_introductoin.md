@@ -203,5 +203,3 @@ func (m *MallardDuck) Display() {
 ### HAS-A can be better than IS-A
 
 > **Desgin Principle** Favor composition over inheritance.
-
-
