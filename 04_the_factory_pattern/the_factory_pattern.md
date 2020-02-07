@@ -6,7 +6,7 @@
 
 The simple factory in terms of the pizza example:
 
-![Simple Factory](simple_factory_pizza.png)
+![Simple Factory](resources/simple_factory_pizza.png)
 
 ## Factory Method Pattern defined
 
@@ -14,11 +14,11 @@ The simple factory in terms of the pizza example:
 
 The factory method in terms of the pizza example:
 
-![Factory Method Pizza](factory_method_pizza.png)
+![Factory Method Pizza](resources/factory_method_pizza.png)
 
 The factory method in general:
 
-![Factory Method](factory_method.png)
+![Factory Method](resources/factory_method.png)
 
 ### The Dependency Iversion Principle
 
@@ -38,8 +38,8 @@ any of its base classes.
 
 The Abstract factory in terms of the pizza example:
 
-![Abstract Factory Pizza](abstract_factory_pizza.png)
+![Abstract Factory Pizza](resources/abstract_factory_pizza.png)
 
 The abstract factory in general:
 
-![Abstract Factory](abstract_factory.png)
+![Abstract Factory](resources/abstract_factory.png)
