@@ -203,3 +203,7 @@ func (m *MallardDuck) Display() {
 ### HAS-A can be better than IS-A
 
 > **Desgin Principle** Favor composition over inheritance.
+
+### Speaking of Design Patterns...
+
+> **The Strategy Pattern** defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
